@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UTS PEMOGRAMAN BERGERAK IRPAN</string>
+    <string name="Nama">Nama orang</string>
+    <string name="UserName">Username</string>
+    <string name="Email">Email</string>
+    <string name="Name">Nama</string>
+    <string name="Bio">Biodata</string>
+    <string name="github_user">GITHUB USER</string>
+    <string name="id">Id</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="Repos">Repositori</string>
+    <string name="Gists">Gists</string>
+    <string name="Lokasi">Lokasi</string>
+</resources>

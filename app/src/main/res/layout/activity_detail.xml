@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#333333"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/Gambar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/TeksUsername"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:background="#333333"
+            android:scaleType="fitCenter"
+            android:text="@string/UserName"
+            android:textSize="25sp"
+            app:cardCornerRadius="30dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/Gambar"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/Gambar"
+            app:layout_constraintTop_toTopOf="@+id/Gambar" />
+
+        <TextView
+            android:id="@+id/Teksid"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:background="#333333"
+            android:scaleType="fitCenter"
+            android:textColor="@color/white"
+            android:text="@string/id"
+            android:textSize="25sp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksUsername"
+            app:layout_constraintStart_toStartOf="@+id/TeksUsername"
+            app:layout_constraintTop_toBottomOf="@+id/TeksUsername" />
+
+
+        <TextView
+            android:id="@+id/TeksNama"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:background="#333333"
+            android:scaleType="fitCenter"
+            android:textColor="@color/white"
+            android:text="@string/Name"
+            android:textSize="25sp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/Teksid"
+            app:layout_constraintStart_toStartOf="@+id/Teksid"
+            app:layout_constraintTop_toBottomOf="@+id/Teksid" />
+
+        <TextView
+            android:id="@+id/TeksLokasi"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:background="#333333"
+            android:scaleType="fitCenter"
+            android:textColor="@color/white"
+            android:text="@string/Email"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksNama"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="@+id/TeksNama"
+            app:layout_constraintTop_toTopOf="@+id/TeksNama" />
+
+
+        <TextView
+            android:id="@+id/TeksEmail"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:background="#333333"
+            android:scaleType="fitCenter"
+            android:textColor="@color/white"
+            android:text="@string/Lokasi"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksLokasi"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="@+id/TeksLokasi"
+            app:layout_constraintTop_toTopOf="@+id/TeksLokasi" />
+
+        <TextView
+            android:id="@+id/TeksBio"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="@string/Bio"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksEmail"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/TeksEmail"
+            app:layout_constraintTop_toTopOf="@+id/TeksEmail" />
+
+        <TextView
+            android:id="@+id/TeksRepos"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="@string/Repos"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksBio"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/TeksBio"
+            app:layout_constraintTop_toBottomOf="@+id/TeksBio" />
+
+        <TextView
+            android:id="@+id/TeksGists"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="@string/Gists"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksBio"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/TeksBio"
+            app:layout_constraintTop_toBottomOf="@+id/TeksBio" />
+
+        <TextView
+            android:id="@+id/Teksfollowers"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="@string/followers"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksRepos"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/TeksRepos"
+            app:layout_constraintTop_toBottomOf="@+id/TeksRepos" />
+
+        <TextView
+            android:id="@+id/Teksfollowing"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#333333"
+            android:gravity="center"
+            android:text="@string/following"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/TeksGists"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/TeksGists"
+            app:layout_constraintTop_toBottomOf="@+id/TeksGists" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
